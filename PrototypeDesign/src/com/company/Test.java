@@ -32,7 +32,17 @@ public class Test {
         System.out.println();
 
         Student s2 = (Student) s1.objectClone();
+
+        System.out.println("Do you want to modify the student details");
+        System.out.println("1 = Yes  2 = No");
+        int response = Integer.parseInt(br.readLine());
+       if(response == 1)
+            s2.modifyStudentDetails();
         s2.viewStudentDetails();
+
+
+
+
 
     }
 
